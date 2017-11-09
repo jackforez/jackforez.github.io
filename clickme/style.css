@@ -17,7 +17,7 @@ body{
     display: none;
 }
 .mydiv{
-    width: calc(50%);
+    width: 50%;
     height: 100px;
     border: 1px solid #BEBABA;
     border-radius: 3px;
