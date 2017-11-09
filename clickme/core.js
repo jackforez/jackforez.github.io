@@ -18,7 +18,7 @@ play.addEventListener('click',start);
 again.addEventListener('click',start);
 canvas.addEventListener('mousedown',function(e){
 for(var i =0;i<balls.length;i++){
-    if(balls[i].dist(e.clientX,e.clientY)<balls[i].r && balls[i].v>0){
+    if(balls[i].dist(e.clientX,e.clientY)<balls[i].r*1.5 && balls[i].v>0){
         let v = balls[i].v;
         balls[i].v =0;
         _SC+=10;
@@ -52,7 +52,7 @@ for(var i =0;i<balls.length;i++){
 canvas.addEventListener('touchend',function(event){
     let touches = event.changedTouches[0];
     for(var i =0;i<balls.length;i++){
-        if(balls[i].dist(touches.clientX,touches.clientY)<balls[i].r && balls[i].v>0){
+        if(balls[i].dist(touches.clientX,touches.clientY)<balls[i].r*1.5 && balls[i].v>0){
             let v = balls[i].v;
             balls[i].v =0;
             _SC+=10;
